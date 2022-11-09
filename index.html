@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <title>Djagora</title>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        .hero {
+            min-height: 100vh;
+            background-image: linear-gradient(to right top,
+                    rgba(0, 129, 194, 0.8),
+                    rgba(0, 0, 0, 0.8)),
+                url(../images/bg.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            padding: 3rem;
+        }
+
+        .hero__content {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .desc {
+            font-size: 2rem;
+            font-weight: 700;
+            font-style: italic;
+            color: #fff;
+            max-width: 20ch;
+            text-align: center;
+        }
+
+        .foundation,
+        .program {
+            padding: 8px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .foundation {
+            max-width: 160px;
+        }
+
+        .foundation__img,
+        .program__img {
+            width: 100%;
+            height: auto;
+        }
+
+        .programs {
+            display: flex;
+            max-width: 80vw;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+        }
+
+        .program {
+            max-width: 120px;
+            height: auto;
+
+        }
+
+        @media (min-width: 1024px) {
+            .hero {
+                padding: 4rem;
+            }
+
+            .desc {
+                font-size: 3rem;
+            }
+
+            .programs {
+                gap: 2rem;
+            }
+
+
+            .foundation {
+                max-width: 240px;
+            }
+
+            .program {
+                max-width: 160px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero__content">
+            <p class="desc">We are getting ready to launch our site</p>
+            <a href="https://www.facebook.com/djagorafoundation" class="foundation" target="_blank"
+                rel="noopener noreferrer">
+                <img class=" foundation__img" src="images/djagora-Foundation.png" alt="">
+            </a>
+            <div class="programs">
+                <a href="https://www.facebook.com/djagorafablab" class="program" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class=" program__img" src="images/djagora-FAblab.png" alt="">
+                </a>
+                <a href="https://www.facebook.com/FondationDjagora" class="program" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class=" program__img" src="images/djagora-academy.png" alt="">
+                </a>
+                <a href="#" class="program" target="_blank" rel="noopener noreferrer">
+                    <img class=" program__img" src="images/djagora-Junior.png" alt="">
+                </a>
+                <a href="https://www.facebook.com/djagoramaisondigitale" class="program" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class=" program__img" src="images/Djagora M.png" alt="">
+                </a>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
